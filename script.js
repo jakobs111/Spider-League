@@ -1,4 +1,1 @@
-// Example JavaScript
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Spider League website loaded!");
-});
+console.log("Spider League JS loaded! This is where spider submission magic will happen.");
