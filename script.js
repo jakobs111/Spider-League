@@ -1,1 +1,0 @@
-console.log("Spider League JS loaded! Submit your spider and battle for glory.");
