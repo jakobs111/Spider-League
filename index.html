@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spider League</title>
-    <link rel="stylesheet" href="style.css">
-
-<form name="spider-submission" netlify hidden>
-  <input type="text" name="name">
-  <input type="file" name="photo">
-</form>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spider League</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>🕷️ Welcome to Spider League! 🕷️</h1>
-        <p>A weekly showdown to find the most dangerous (or ridiculous) spider spotted by you and your friends!</p>
-        <div class="spider-gallery">
-            <img src="assets/images/spider1.jpg" alt="Spider 1">
-            <img src="assets/images/spider2.jpg" alt="Spider 2">
-            <img src="assets/images/spider3.jpg" alt="Spider 3">
-        </div>
-        <p>Submit your spider and compete to be this week's Spider League Champion!</p>
-        <button onclick="alert('Feature coming soon!')">Submit Your Spider</button>
-    </div>
-    <script src="script.js"></script>
-</body>
-<section class="submit-section">
-  <h2>Submit Your Spider</h2>
-  <form name="spider-submission" method="POST" data-netlify="true" enctype="multipart/form-data">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="file" name="photo" accept="image/*" required />
-    <button type="submit">Submit</button>
-  </form>
-  <p class="submit-message">Thanks for your terrifying contribution!</p>
-</section>
+  <div class="container">
+    <h1>🕷️ Welcome to Spider League! 🕷️</h1>
+    <p>A weekly showdown to find the most dangerous (or ridiculous) spider spotted by you and your friends!</p>
 
+    <div class="spider-gallery">
+      <img src="assets/images/spider1.jpg" alt="Spider 1" />
+      <img src="assets/images/spider2.jpg" alt="Spider 2" />
+      <img src="assets/images/spider3.jpg" alt="Spider 3" />
+    </div>
+
+    <section class="submit-section">
+      <h2>Submit Your Spider</h2>
+      <form name="spider-submission" method="POST" data-netlify="true" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="file" name="photo" accept="image/*" required />
+        <button type="submit">Submit</button>
+      </form>
+      <p class="submit-message">Thanks for your terrifying contribution!</p>
+    </section>
+  </div>
+
+  <form name="spider-submission" netlify hidden>
+    <input type="text" name="name" />
+    <input type="file" name="photo" />
+  </form>
+
+  <script src="script.js"></script>
+</body>
 </html>
